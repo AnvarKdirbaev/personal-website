@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anvar Portfolio</title>
+  <link rel="stylesheet" href="saytlar.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>AnvarDev</h1>
+      <nav>
+        <a href="#home">Bosh sahifa</a>
+        <a href="#services">Xizmatlar</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Aloqa</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Men Anvarman, veb-ishlab chiquvchi</h2>
+      <p>Soddaligi va funksionalligi birga bo‘lgan saytlar yarataman.</p>
+    </div>
+  </section>
+
+  <section id="services" class="services container">
+    <h2>Xizmatlar</h2>
+    <div class="cards">
+      <div class="card">HTML/CSS sahifa yaratish</div>
+      <div class="card">JavaScript interaktivlik</div>
+      <div class="card">Node.js va backend ishlari</div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio container">
+    <h2>Portfolio</h2>
+    <div class="filters">
+      <button onclick="filterItems('all')">Hammasi</button>
+      <button onclick="filterItems('frontend')">Frontend</button>
+      <button onclick="filterItems('backend')">Backend</button>
+    </div>
+    <div class="items">
+      <div class="item frontend">Landing sahifa</div>
+      <div class="item backend">API xizmati</div>
+      <div class="item frontend">Portfolio dizayn</div>
+      <div class="item backend">Ma'lumotlar bazasi ulash</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Aloqa</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Ismingiz" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Xabar..." required></textarea>
+      <button type="submit">Yuborish</button>
+      <p id="formStatus"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AnvarDev. Barcha huquqlar himoyalangan.</p>
+  </footer>
+
+  <script src="saytlar.js"></script>
+</body>
+</html>
